@@ -1,0 +1,246 @@
+/*==========================================================================
+                                html
+============================================================================ */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/*==========================================================================
+                                html, body
+============================================================================ */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*==========================================================================
+                                 body
+============================================================================ */
+body {
+    background: #ffffff url('../img/geometry2.png');
+    /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+/*==========================================================================
+                                container
+============================================================================ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*==========================================================================
+                               Header h1
+============================================================================ */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+/*==========================================================================
+                              Deck of cards
+============================================================================ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+/*==========================================================================
+                              timer
+============================================================================ */
+.score-panel .timer {
+    margin-left: 50px;
+}
+
+/*==========================================================================
+                              score panel
+============================================================================ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+    color: #ffa500;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+@keyframes coloranimate {
+    from {
+        background-color: #ff0000;
+    }
+    to {
+        background-color: #2e3d49;
+    }
+}
+
+/*==========================================================================
+                                modal                  
+============================================================================ */
+.modal-title,.modal-body {
+  font-family: 'Cedarville Cursive', cursive;
+  margin: 0 auto;
+}
+
+.modal.fade {
+  animation:animatezoom 0.6s
+}
+@keyframes animatezoom {
+  from{
+    transform:scale(0)
+  } to{transform:scale(1)}
+}
+
+.winstars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.winstars li {
+    list-style: none;
+    display: inline-block;
+    color: #ffa500;
+}
+
+/*==========================================================================
+                              modal button
+============================================================================ */
+
+.btn {
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #02b3e4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color: #2d3c49}
+
+.btn:active {
+  background-color: #2d3c49;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*==========================================================================
+                             media query
+============================================================================ */
+@media screen and (max-width: 536px){
+    .deck {
+        width: 310px;
+        min-height: 320px;
+        padding: 16px;
+
+    }
+
+    .score-panel {
+        width: 300px;
+    }
+
+    .deck .card {
+        width: 65px;
+        height: 65px;
+    }
+
+
+}
+@media screen and (min-width: 537px) and (max-width: 760px){
+
+    .deck {
+        width: 495px;
+        min-height: 495px;
+        padding: 16px;       
+    }
+
+    .deck .card {
+        width: 94px;
+        height: 94px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .score-panel {
+        margin-top: 50px;
+        padding: 5px;
+        font-size: 25px;
+    }
+    .deck {
+        width: 500px;
+        min-height: 500px;
+        padding: 16px;
+        
+    }
+    .deck .card {
+        width: 95px;
+        height: 95px;
+    }
+}
+
+

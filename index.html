@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta tag basically specifies character set -->
+    <meta charset="utf-8">
+    <!-- Meta tag tells the browser that the width of the screen should be considered the "Full Width" of the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>Matching Game</title>
+    <!-- Meta tag is used to specify page description -->
+    <meta name="description" content="Matching Memory Game using Google Font Icons">
+    <!-- Bootstrap CSS Stylesheet -->
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Google Font Family Coda -->
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" >
+    <!--  CUSTOM CSS Stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Bootstrap CSS Stylesheet  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+    <!-- Emoji CSS Plugin -->
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css" >
+    <!-- Latest compiled and minified jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head> <!-- head -->
+
+<body>
+    <div class="container">      
+        <section class="score-panel">
+            <h1>Matching Game</h1>
+            <!-- Star items -->
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+            <!-- Timer section -->
+            <span class="moves">0</span> Moves
+            <span class="timer">00:00</span>
+            <!-- Restart the game -->
+            <div class="restart">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section> <!-- /.score-panel -->
+        <!-- Cards Block -->
+    
+        <ul class="deck">
+            <li class="card">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card match">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card match">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card open show">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul><!-- /.deck -->
+
+    </div>  <!-- /.container -->
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" data-backdrop="false" data-keyboard="false" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Congratulations<i class="em-svg em-tada"></i></h4>              
+            </div><!-- /.modal-header -->
+            <div class="modal-body">
+                <p class="won"></p>
+                <p class="winMoves"></p>
+                <p class="winTime"></p>
+                <div class="rating">Your rating: 
+                    <ul class="winstars"></ul>
+                </div>
+            </div><!-- /.modal-body -->
+            <div class="modal-footer">
+                <button type="button" id="playAgain" class="btn btn-primary" data-dismiss="modal">Play Again</button>
+            </div><!-- /.modal-footer -->
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal fade -->
+    <!-- Latest compiled and minified bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+    <!-- Plugin for Canvas-confetti animation -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@0.0.3/dist/confetti.browser.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
