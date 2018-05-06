@@ -11,7 +11,7 @@ Initially all the cards are flipped down and when user clicks on the card the ca
 
 1. When user clicks on the card and click on another card if matching found card flips open.
 2. If the matching card not found the card flips down. 
-3. Once the game is done congratulatory message is shown using modal contains 
+3. Once the game is done congratulatory message is shown using modal contains.
  - Numbers of moves
  - Time taken
  - Star rating
