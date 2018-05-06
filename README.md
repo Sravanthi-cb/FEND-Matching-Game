@@ -1,7 +1,7 @@
 # FEND-Matching-Game
 
 ## Description
-** Memory Matching Game ** This is one of the Udacity FEND Nanodegree Project.
+**Memory Matching Game**  This is one of the Udacity FEND Nanodegree Project.
 - Matching game is designed using the mobile first front-end Bootstrap framework for faster and easier web development.
 
 ## Instructions
