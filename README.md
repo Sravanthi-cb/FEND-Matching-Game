@@ -20,19 +20,19 @@ Initially all the cards are flipped down and when user clicks on the card the ca
 
 ## Dependencies
 The game uses icons from the following website:
-[Font Awesome] (https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css)
+[Font Awesome](https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css)
 
 ###### Google Fonts
-- [Coda] (https://fonts.googleapis.com/css?family=Coda)
-- [Cursive] (https://fonts.googleapis.com/css?family=Cedarville+Cursive)
+- [Coda](https://fonts.googleapis.com/css?family=Coda)
+- [Cursive](https://fonts.googleapis.com/css?family=Cedarville+Cursive)
 
 ###### Bootstrap Modal
-- [Modal] (https://getbootstrap.com/docs/4.0/components/modal/)
+- [Modal](https://getbootstrap.com/docs/4.0/components/modal/)
 
 ## Plugin
 
-###### [Emoji] (https://afeld.github.io/emoji-css/emoji.css)
+###### [Emoji](https://afeld.github.io/emoji-css/emoji.css)
 
-###### [Confetti] (https://cdn.jsdelivr.net/npm/canvas-confetti@0.0.3/dist/confetti.browser.min.js)
+###### [Confetti](https://cdn.jsdelivr.net/npm/canvas-confetti@0.0.3/dist/confetti.browser.min.js)
 
-###### [Live] (https://sravanthi-cb.github.io/FEND-Matching-Game/)
+###### [Live](https://sravanthi-cb.github.io/FEND-Matching-Game/)
